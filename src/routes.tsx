@@ -3,6 +3,7 @@ import { ExerciseOverview } from "@/components/Exercises";
 import { MeasurementCategoryOverview } from "@/components/Measurements";
 import { BmiCalculator, NutritionDiaryOverview, PlanDetail, PlansOverview } from "@/components/Nutrition";
 import {
+    IntervalTimer,
     PrivateTemplateOverview,
     ExerciseAnalytics,
     PublicTemplateOverview,
@@ -52,6 +53,7 @@ export const WgerRoutes = () => {
                     <Route path="analytics" element={<ExerciseAnalytics />} />
                     <Route path="calendar" element={<Calendar />} />
                     <Route path="add" element={<RoutineAdd />} />
+                    <Route path="timer" element={<IntervalTimer />} />
 
                     <Route path=":routineId">
                         <Route path="day/:dayId">

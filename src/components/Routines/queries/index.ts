@@ -69,3 +69,4 @@ export {
     useSessionOfDay,
     useSessionsQuery
 } from "./sessions";
+export { useIntervalPlanQuery, useIntervalPresetsQuery } from './intervalTimer';

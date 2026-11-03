@@ -4,6 +4,7 @@
  * Other code may only import from `@/components/Routines`, never from
  * internal sub-paths.
  */
+export { IntervalTimer } from "./screens/Timer/IntervalTimer";
 export { RoutineAdd } from "./screens/Detail/RoutineAdd";
 export { RoutineDetail } from "./screens/Detail/RoutineDetail";
 export { RoutineDetailsTable } from "./screens/Detail/RoutineDetailsTable";

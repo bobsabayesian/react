@@ -28,6 +28,8 @@ export enum QueryKey {
     SESSION_SEARCH = 'session-search',
     SESSIONS_FULL = 'sessions-full',
     ROUTINE_LOGS = 'routine-logs',
+    INTERVAL_PRESETS = 'interval-presets',
+    INTERVAL_PLAN = 'interval-plan',
     ROUTINE_LOG_DATA = 'routine-log-data',
     ROUTINE_STATS = 'routine-stats',
     EXERCISE_ANALYTICS = 'exercise-analytics',
