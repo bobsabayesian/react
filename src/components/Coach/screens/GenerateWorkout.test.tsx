@@ -24,9 +24,9 @@ const workout: GeneratedWorkout = {
     seed: 1234,
     exercises: [
          
-        { exercise_id: 1, name: 'Barbell row', slot: 1, sets: 4, target_reps: 8, prescribed_weight_kg: '70.00', e1rm_basis_kg: '87.5' },
+        { exercise_id: 1, name: 'Barbell row', slot: 1, sets: 4, target_reps: 8, prescribed_weight: '154', weight_unit: 'lb', prescribed_weight_kg: '69.85', e1rm_basis_kg: '87.5' },
          
-        { exercise_id: 2, name: 'Hammer curl', slot: 2, sets: 3, target_reps: 10, prescribed_weight_kg: null, e1rm_basis_kg: null },
+        { exercise_id: 2, name: 'Hammer curl', slot: 2, sets: 3, target_reps: 10, prescribed_weight: null, weight_unit: 'lb', prescribed_weight_kg: null, e1rm_basis_kg: null },
     ],
 };
 

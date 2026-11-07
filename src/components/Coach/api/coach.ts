@@ -20,6 +20,10 @@ export interface GeneratedExercise {
      
     target_reps: number;
      
+    prescribed_weight: string | number | null;
+     
+    weight_unit: 'kg' | 'lb';
+     
     prescribed_weight_kg: string | number | null;
      
     e1rm_basis_kg: string | number | null;

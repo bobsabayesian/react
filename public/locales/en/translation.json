@@ -281,11 +281,11 @@
             "isolation": "Isolation"
         },
         "prescription": {
-            "weighted": "{{sets}} × {{reps}} @ {{weight}} kg",
+            "weighted": "{{sets}} × {{reps}} @ {{weight}} {{unit}}",
             "calibrate": "{{sets}} × {{reps}} · calibrate"
         },
         "basis": {
-            "e1rm": "Based on est. 1RM {{value}} kg",
+            "e1rm": "Based on est. 1RM {{value}} {{unit}}",
             "none": "No history yet: pick a weight you can move for these reps"
         },
         "routineName": "Routine name",

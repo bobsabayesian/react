@@ -59,7 +59,13 @@ const errorMessage = (error: unknown, fallback: string): string => {
     return fallback;
 };
 
-const formatKg = (value: string | number): string => String(Number(value));
+const KG_PER_LB = 0.45359237;
+
+/* A number without trailing zeros, e.g. "62.5" or "135" */
+const formatWeight = (value: string | number): string => String(Number(Number(value).toFixed(1)));
+
+/* The 1RM basis arrives in kg, show it in the unit the weights are in */
+const inUnit = (kg: string | number, unit: 'kg' | 'lb'): number => unit === 'lb' ? Number(kg) / KG_PER_LB : Number(kg);
 
 const AddProfileDialog = (props: { open: boolean, onClose: () => void, onCreated: (id: number) => void }) => {
     const { t } = useTranslation();
@@ -328,7 +334,7 @@ export const GenerateWorkout = () => {
             <Stack>
                 {result.exercises.map(e => {
                     const tier = e.slot <= 2 ? 'heavy' : e.slot <= 4 ? 'secondary' : 'isolation';
-                    const cold = e.prescribed_weight_kg === null;
+                    const cold = e.prescribed_weight === null;
                     return (
                         <Stack
                             key={e.exercise_id}
@@ -359,14 +365,15 @@ export const GenerateWorkout = () => {
                                         : t('coach.prescription.weighted', {
                                             sets: e.sets,
                                             reps: e.target_reps,
-                                            weight: formatKg(e.prescribed_weight_kg!),
+                                            weight: formatWeight(e.prescribed_weight!),
+                                            unit: e.weight_unit,
                                         })}
                                 </Typography>
                                 <Typography variant="caption" color="text.secondary">
                                     {cold
                                         ? t('coach.basis.none')
                                         : e.e1rm_basis_kg !== null
-                                            ? t('coach.basis.e1rm', { value: formatKg(e.e1rm_basis_kg) })
+                                            ? t('coach.basis.e1rm', { value: formatWeight(inUnit(e.e1rm_basis_kg, e.weight_unit)), unit: e.weight_unit })
                                             : ''}
                                 </Typography>
                             </Box>
