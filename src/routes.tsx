@@ -1,3 +1,4 @@
+import { GenerateWorkout } from "@/components/Coach";
 import { ConfigurableDashboard } from "@/components/Dashboard/ConfigurableDashboard";
 import { ExerciseOverview } from "@/components/Exercises";
 import { MeasurementCategoryOverview } from "@/components/Measurements";
@@ -54,6 +55,7 @@ export const WgerRoutes = () => {
                     <Route path="calendar" element={<Calendar />} />
                     <Route path="add" element={<RoutineAdd />} />
                     <Route path="timer" element={<IntervalTimer />} />
+                    <Route path="generate" element={<GenerateWorkout />} />
 
                     <Route path=":routineId">
                         <Route path="day/:dayId">

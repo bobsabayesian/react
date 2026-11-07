@@ -239,6 +239,85 @@
     "cancel": "Cancel",
     "noResults": "No results",
     "noResultsDescription": "No results found for this query, consider reducing the number of filters.",
+    "coach": {
+        "title": "Generate workout",
+        "subtitle": "Builds a session from your equipment, history and how recovered each muscle is.",
+        "whereTraining": "Where are you training?",
+        "noProfiles": "Add a training space first, so the generator knows which equipment you have.",
+        "addProfile": {
+            "title": "Add training space",
+            "name": "Name, e.g. Home gym",
+            "hint": "Tick the equipment available. Leave everything unticked for bodyweight exercises only.",
+            "error": "The training space could not be saved."
+        },
+        "splitLabel": "Split",
+        "split": {
+            "auto": "Auto",
+            "push": "Push",
+            "pull": "Pull",
+            "legs": "Legs",
+            "upper": "Upper",
+            "lower": "Lower",
+            "full_body": "Full body"
+        },
+        "autoChip": "Auto → {{split}}",
+        "autoHint": "{{split}} is your freshest group ({{pct}}% recovered).",
+        "manualHint": "Chosen by you. Auto would pick {{split}}.",
+        "timeLabel": "Time available",
+        "minutes": "{{count}} min",
+        "countHint": "{{count}} exercises for {{minutes}} minutes.",
+        "generate": "Generate workout",
+        "regenerate": "Regenerate",
+        "shuffle": "Shuffle exercises",
+        "empty": {
+            "title": "No session yet",
+            "body": "Pick a split and time, then press Generate."
+        },
+        "resultTitle": "{{split}} session",
+        "resultMeta": "{{minutes}} min · {{count}} exercises · {{profile}}",
+        "tier": {
+            "heavy": "Heavy compound",
+            "secondary": "Secondary compound",
+            "isolation": "Isolation"
+        },
+        "prescription": {
+            "weighted": "{{sets}} × {{reps}} @ {{weight}} kg",
+            "calibrate": "{{sets}} × {{reps}} · calibrate"
+        },
+        "basis": {
+            "e1rm": "Based on est. 1RM {{value}} kg",
+            "none": "No history yet: pick a weight you can move for these reps"
+        },
+        "routineName": "Routine name",
+        "defaultRoutineName": "Dynamic {{split}} - {{date}}",
+        "saveRoutine": "Save as routine",
+        "saved": "Saved to your routines.",
+        "openRoutine": "Open",
+        "footnote": "Weights come from your best set in the last 90 days (estimated 1RM). Lifts with no history start at 10 reps so you can calibrate.",
+        "error": "The workout could not be generated.",
+        "freshness": {
+            "title": "Muscle freshness",
+            "error": "Muscle freshness could not be loaded."
+        },
+        "muscles": {
+            "chest": "Chest",
+            "shoulders": "Shoulders",
+            "triceps": "Triceps",
+            "lats": "Lats",
+            "upperBack": "Upper back",
+            "biceps": "Biceps",
+            "quads": "Quads",
+            "hamstrings": "Hamstrings",
+            "glutes": "Glutes",
+            "calves": "Calves",
+            "core": "Core"
+        },
+        "status": {
+            "fatigued": "fatigued",
+            "recovering": "recovering",
+            "ready": "ready"
+        }
+    },
     "routines": {
         "timer": {
             "title": "Interval timer",

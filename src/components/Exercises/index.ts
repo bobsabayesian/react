@@ -25,6 +25,7 @@ export { ExerciseVideo, ExerciseVideoAdapter } from "./models/video";
 
 // Query hooks
 export {
+    useEquipmentQuery,
     useExercisesDetailQueries,
     useFetchExercisesByUuidsQuery,
     useLanguageQuery,
